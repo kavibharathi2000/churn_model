@@ -51,7 +51,7 @@ machine.add(Dense(1,activation='relu',use_bias=True))
 machine.compile(optimizer='adam', loss='binary_crossentropy', metrics='accuracy')
 
 # fitting the model
-machine.fit(x_train , y_train , batch_size=10 , epochs=1000)
+machine.fit(x_train , y_train , batch_size=10 , epochs=100)
 
 # prediting the model
 y_pred= machine.predict(x_test)
